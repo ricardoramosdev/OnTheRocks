@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+*{
+    font-family: 'PT Sans', sans-serif;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Raleway', sans-serif;
+}
+body {
+    position: relative;
+    
+    box-sizing: border-box;
+    background-color: #f2f3ee;
+}
+
+.container-xl {
+    
+    
+    justify-content: center;
+}
+/* CONTENIDO */
+#container-login {
+    justify-content: center;
+    width: 900px;
+    height: 590px;
+    margin-bottom: 0px !important;
+    margin-top: 0px !important;
+    background-color: white;
+    margin: auto;
+}
+/* LADO IZQUIERDO */
+.izquierda {
+    display: flex;
+    flex-direction: column;
+    align-items: initial;
+    height: 580px;
+    background-color: white;
+}
+.form {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.mainTitle {
+    margin-top: 15px;
+    border-bottom: black solid 5px;
+}
+.h1 {
+    font-family: 'raleway', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 300;
+}
+.mb-5 {
+    margin-bottom: 0px !important;
+}
+.mg3 {
+    padding: 0px;
+    margin-bottom: 0px !important;
+}
+.form-label {
+    font-family: 'PT Sans', sans-serif;
+    font-size: x-large;
+    margin-top: 15px;
+}
+.form-control {
+    font-family: 'PT Sans', sans-serif;
+}
+.boton1 {
+    width: 100%;
+    font-size: 15px;
+    font-family: 'PT Sans', sans-serif;
+}
+.boton2 {
+    width: 100%;
+    font-size: 20px;
+    border-color: black;
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    padding: 5px;
+    margin-top: 3rem;
+}
+.iniciarSesion {
+    top: 0px;
+}
+.botones {
+    justify-content: center;
+}
+.t5 {
+    font-size: 15px !important;
+    font-family: 'PT Sans', sans-serif;
+    color: #6c757d !important;
+    margin-bottom: 0px !important;
+    margin-top: 2rem !important;
+}
+.facebook-bg {
+    background-color: #2962ff;
+    margin:15px;
+    justify-content: center;
+}
+.google-bg {
+    background-color: #dc1616;
+    margin: 15px;
+    justify-content: center;
+}
+/* LADO DERECHO */
+.derecha {
+    padding: 0px;
+    border: none;
+}
+.imagen {
+    width: 100%;
+    height: 590px !important;
+    padding: 0px;
+    border: 0px;
+    border-radius: 0px;
+    object-fit: cover;
+    top: 0px !important;
+}
+/* MODAL */
+.modal-header {
+    background-color: #f2f3ee;
+}
+p {
+    font-family: 'PT Sans', sans-serif;
+    font-size: x-large;
+    text-align: start;
+}
+.modal-inp {
+    width: 250px !important;
+}
+.modal-title {
+    font-family: 'raleway', sans-serif;
+}
+.boton-modal{
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    
+}
+.link-modal {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 15px;
+    bottom: 0px;
+    text-align: center;
+}
+.modal-footer {
+    background-color: #f2f3ee;
+}
+.btn-close {
+    /* background-image: none; */
+    width: 15px;
+    height: 15px;
+}

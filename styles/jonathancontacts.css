@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+*{
+    font-family: 'PT Sans', sans-serif;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Raleway', sans-serif;
+}
+body{
+    position: relative;
+    
+    background-color: #F2F3EE;
+    min-height: 100vh;
+}
+main{
+    flex:1;
+}
+h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight:300 !important; 
+    font-size: 5rem;
+}

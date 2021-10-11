@@ -1,0 +1,33 @@
+header img {
+    filter: invert();
+    }
+    .nav-item a:hover {
+    filter: invert();
+    }
+    .nav-item{
+        display: flex;
+    }
+    .btn {
+        font-size: large;
+    }
+    .btn a:hover {
+        filter: invert();
+        }
+    .espacio {
+        flex-grow: 1;
+    }
+    .modal1{
+        background-color: #F2F3EE;
+    }
+    .modal2{
+    color: white;
+    }
+    
+    footer{
+          background-color: black;
+          color:white;
+      }
+    footer img{
+      filter: invert();
+    }
+    

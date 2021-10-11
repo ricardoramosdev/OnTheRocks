@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+:root{
+    --primary-color:#F2F3EE;
+    --secondary-color:black;
+    --tertiary-color:white;
+    
+}
+*{
+    font-family: 'PT Sans', sans-serif;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Raleway', sans-serif;
+}
+/* carousel */
+.main-carousel .carousel-inner img{
+    height: 500px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+    
+}
+
+.carousel-indicators .active{   
+    background-image:url(/assets/images/index/icono_transparente.png)  ;
+    background-size: cover;
+    background-color: transparent;
+    filter: invert() ;
+    
+    height: 3rem !important;
+    width: 3rem;
+    }
+.carousel-indicators {
+    align-items: center;
+    justify-content: center;
+}
+.main-carousel{
+    position: relative;
+}
+.carousel-caption{
+    font-size: 2rem;
+    position: absolute;
+    top:0;
+    left: 0;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    text-shadow: 2px 2px 2px black ;
+    text-align: start;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(00, 00, 00, 0.3);
+}
+.carousel-caption h5{
+    font-size: 6rem;
+}
+/* conteiner principal */
+.container-principal{
+    padding: 0px;
+    /* overflow: hidden; */
+}
+/* aside */
+.aliner{
+    height: 1rem;
+    
+}
+aside #busqueda{
+    width: 80%;
+    
+}
+aside h5{
+    padding-left: 0.3rem;
+}
+#index-aside{
+    
+    background-color: var(--primary-color);
+    color:var(--secondary-color);
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+   
+  
+}
+.aside-search,#aside-accordion:first-child{
+    padding-bottom: 1.25rem  ;
+    border-bottom: rgb(0, 0, 0) solid 1px;
+}
+.aside-search{
+    padding-left: 0.3rem;
+}
+#aside-accordion{
+    padding-top: 0.5rem;
+    
+}
+
+.accordion-item{
+    background-color: var(--secondary-color);
+    
+}
+.accordion-item:last-of-type .accordion-button.collapsed{
+    border-radius: 0px;
+}
+.accordion-button{
+    background-color: var(--primary-color);
+    color:var(--secondary-color);
+    padding: 1rem 0.3rem 1rem 0.4rem;
+}
+.accordion-body{
+    background-image: url(/assets/images/index/bubbles2.webp) !important;
+}
+.accordion-body li{
+    margin-bottom: 0.4rem;
+    
+}
+.accordion-button:not(.collapsed) {
+    color:var(--primary-color);
+    background-color:var(--secondary-color);
+   
+}
+.accordion-button::after{
+    
+    filter: invert();
+}
+.accordion-button:focus{
+    border:none;
+    box-shadow: none !important;
+}
+.link-deco-none a{
+    text-decoration: none;
+}
+/* aside carousel */
+#aside-ads{
+    text-align: center;
+       
+}
+#aside-ads img{
+    height: 230px;
+    object-fit:cover;
+    object-position: center;
+}
+
+
+/* fin de aside */
+
+/* main */
+main{
+    position: relative;
+    background-color: var(--primary-color);
+}
+.filter{
+    padding: 1.25rem 0;
+    
+    justify-content: center;
+}
+
+
+#label-filter{
+    
+    
+    font-size: 1.25rem;
+    text-align: right;
+    padding-right: 0.4rem;
+}
+.card-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+      
+}
+.card:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+/* Empieza Configuracion de cards para tamaño < 576px */
+.card{
+    display: flex;
+    flex-direction: row;
+    border:none;
+    
+    width: 80%;
+    position: relative;
+    align-items: center;
+    background-color:var(--tertiary-color) ;
+    margin-bottom: 5rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem #777;
+}
+
+.card-title{
+    color: black;
+    display: inline-block;
+    text-align: center;
+    z-index: 1;
+    margin-top: 1rem;
+}
+
+.card-images{
+    margin: 0;
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transform: scale(1);
+    
+}
+.autor-image{
+    width: 12%;
+    object-fit: scale-down;
+    object-position: center;
+}
+.card .btn{
+    margin: 1rem;
+    display: inline-block;
+  
+}
+.flip-card{
+    background-color: transparent;
+    perspective: 1000px;
+    width: 100%;
+    height: 30vw;
+}
+/* animacion de card */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.card:hover .flip-card-inner{
+    
+    transition: 1s;
+    transform: rotateY(179deg);
+    
+
+}
+.flip-card-front {
+    display:flex;
+    color: black;
+    height: 100%;
+    align-items: center;
+  }
+.flip-card-back {
+    background-color: rgb(00, 00, 00, 0.3);
+    color: var(--primary-color);
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+  }
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+
+/* Termina Configuracion de cards para tamaño < 576px */
+
+
+
+/* START Aside ancho fijo con media query */
+@media (min-width:768px) {
+    .container-principal{
+        display: flex;
+        flex-direction: row;
+    }
+    aside{
+        width: 230px !important;
+    }
+    .aliner{
+        height: 5rem;
+    }
+    main{
+        flex: 1 !important;
+    }
+    
+}
+/* END Aside ancho fijo con media query */
+
+.pagination .active .page-link{
+    background-color:var(--secondary-color) !important;
+    border-color:var(--secondary-color) ;
+}
+
+.logoWpp img{
+    height: 50px;
+}
+.logoWpp{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 8;
+}

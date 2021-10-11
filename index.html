@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnTheRocks</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/jonathannavfooter.css">
+    <link rel="stylesheet" href="/styles/index.css">
+    <script src="https://kit.fontawesome.com/62ca135f44.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--INICIO HEADER-->
+    <header class="p-0 sticky-top bg-dark ">
+        <nav class="navbar navbar-expand-lg navbar-dark p-0 espacio-container ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/index.html">
+                    <img src="/assets/images/Navbar/logonav.png" alt="" width="100px" height="auto"
+                        class="d-inline-block align-text-top m-0 p-0">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--LINKS HEADER-->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav w-100 mb-2 mb-lg-0 mb-0 h1 d-flex">
+                        <li class="nav-item">
+                            <a type="button" class="btn btn-dark mx-2" aria-current="page" href="#"
+                                data-bs-toggle="modal" data-bs-target="#Modalsuscripcion">Suscripción</a>
+                        </li>
+                        <li class="nav-item">
+                            <a type="button" class="btn btn-dark mx-2" aria-current="page"
+                                href="/pages/contact.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a type="button" class="btn btn-dark mx-2" aria-current="page"
+                                href="/pages/about.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a type="button" class="btn btn-dark mx-2" aria-current="page"
+                                href="/pages/gallery.html">Galería</a>
+                        </li>
+                        <li class="nav-item d-flex espacio">
+                            <div class="espacio"></div>
+                        </li>
+                        <li class="nav-item">
+                            <a type="button" class="btn btn-dark mx-2" aria-current="page" href="/pages/login.html"> <i
+                                    class="fas fa-user"></i> Login </i></a>
+                        </li>
+                    </ul>
+                </div>
+                <!--FIN LINKS HEADER-->
+            </div>
+        </nav>
+    </header>
+    <!--INICIO MODAL-->
+    <div class="modal fade" id="Modalsuscripcion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header modal1 col">
+                    <h4 class="modal-title" id="exampleModalLabel">¡Sigamos en contacto!</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body modal1">
+                    <form>
+                        <h5 class="modal-title" id="exampleModalLabel">Subscribite y recibi las mejores promociones para
+                            tus bares preferidos</h5><br>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nombre y Apellido</label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-dark text-white" id="basic-addon1"><i
+                                        class="fas fa-user"></i></span>
+                                <input type="text" class="form-control" id="name" name="name">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label" name="email">Email</label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-dark text-white" id="basic-addon1"><i
+                                        class="fas fa-envelope"></i></span>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                            </div>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1" name="Subscripcion">
+                            <label class="form-check-label" for="exampleCheck1">Recibir promociones</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer modal1 d-flex justify-content-between">
+                    <img src="/assets/images/Navbar/Logo_transaparente_chico.png" alt="" width="80px" height="auto"
+                        class="d-inline-block align-text-top m-0">
+                        <a href="/pages/error404/error404.html" type="button" class="btn btn-dark"> Enviar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIN MODAL -->
+    <!-- FIN HEADER -->
+    
+    <div>
+        <!--
+        =================================
+        ==		Carousel  			   ==
+        ================================= 
+        -->
+
+        <div class="main-carousel">
+            <div id="carouselHeader" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselHeader" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselHeader" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselHeader" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselHeader" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+
+                    <div class="carousel-item  active" data-bs-interval="4000">
+                        <img src="/assets/images/index/slide1.jpg" class="d-block w-100 " alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Historias</h5>
+                            <p>Cada bebida cuenta una historia. Descubri la tuya.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="/assets/images/index/slide2.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Estilos</h5>
+                            <p>La presentación hace al maestro. Tragos con personalidad</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item " data-bs-interval="4000">
+                        <img src="/assets/images/index/slide3.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Top 10</h5>
+                            <p>Te mostramos los 10 mejores bares speakeasy. Encontralos... si puedes</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="/assets/images/index/slide4.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Tendencias</h5>
+                            <p>Cocteleria molecular. Una nueva tendencia</p>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselHeader"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselHeader"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!-- End Carrousel -->
+
+        
+        <!--
+        =================================
+        == Contenedor principal		   ==
+        ================================= -->
+
+        <div class="row g-0 justify-content-center container-principal">
+            <!--
+            =================================
+            ==			  Aside			   ==
+            ================================= -->
+           
+            <aside class="col-12  " id="index-aside">
+                <!-- inicio de barra buscador -->
+                <div class="aliner"></div>
+                <div class="aside-search">
+                    <label for="busqueda" class="pe-1">
+                        <h5>Busca tu trago <i class="fas fa-cocktail"></i></h5>
+                    </label>
+                    <input type="search" placeholder=" OnTheRocks&copy;" id="busqueda">
+                </div>
+                <!-- fin de barra buscador -->
+
+                <!-- inicio de filtro por categorias -->
+
+                <div id="aside-accordion">
+                    <h5>Descubre nuestras categorias</h5>
+                    <div class="accordion accordion-flush " id="accordionFlushItems">
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    Ocasiones
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushItems">
+                                <div class="accordion-body">
+                                    <ul class="btn-toggle-nav list-unstyled   link-deco-none">
+                                        <li><a href="/pages/error404/error404.html" class="link-light ">Fiesta con
+                                                amigos</a></li>
+                                        <li><a href="/pages/error404/error404.html" class="link-light">Dias de
+                                                calor</a></li>
+                                        <li><a href="/pages/error404/error404.html" class="link-light">Momento
+                                                reflexivo</a></li>
+                                        <li><a href="/pages/error404/error404.html" class="link-light">Cura
+                                                Resacas</a></li>
+                                        <li><a href="/pages/error404/error404.html" class="link-light">Dias de
+                                                invierno</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    Por Tamaño
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushItems">
+                                <div class="accordion-body">
+                                    <ul class="btn-toggle-nav list-unstyled  link-deco-none">
+                                        <li><a href="/pages/error404/error404.html" class="link-light">Shots</a></li>
+                                        <li><a href="/pages/error404/error404.html" class="link-light ">Cortos</a>
+                                        </li>
+                                        <li><a href="/pages/error404/error404.html" class="link-light">Largos</a></li>
+                                        <li><a href="/pages/error404/error404.html" class="link-light">Extra Large</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne">
+                                    Técnica de preparación
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushItems">
+                                <div class="accordion-body">
+                                    <ul class="btn-toggle-nav list-unstyled  link-deco-none">
+                                        <li><a href="/pages/error404/error404.html" class="link-light">Batidos</a>
+                                        </li>
+                                        <li><a href="/pages/error404/error404.html" class="link-light">Mezclados</a>
+                                        </li>
+                                        <li><a href="/pages/error404/error404.html" class="link-light">Directos</a>
+                                        </li>
+                                        <li><a href="/pages/error404/error404.html" class="link-light">Frozzen</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- fin de filtro por categorias -->
+
+                <!-- inicio de carrousel de publicidad autoslide-->
+                <div id="aside-ads" class="d-none d-md-block">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/assets/images/index/ads1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="/assets/images/index/fernet.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/assets/images/index/Absolut-Vodka.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="text-dark">
+                        <p>Publicidad</p>
+                    </div>
+                </div>
+                <!-- fin de carrousel de publicidad-->
+
+
+            </aside>
+
+            <!--
+            =================================
+            ==			  Main			   ==
+            ================================= -->
+            <main class="col-12  ">
+
+                <div class="filter d-flex ">
+
+                    <div id="label-filter"><label for="filter">Ordenar por:</label></div>
+                    <div>
+                        <select class="form-select me-4 " id="filter">
+                            <option value="1" selected>Entradas Recientes</option>
+                            <option value="2">Más Populares </option>
+                            <option value="3">Recomendas</option>
+                        </select>
+                    </div>
+
+                </div>
+                <!--
+                =================================
+                ==			  cards			   ==
+                ================================= -->
+                <section class="card-container justify-content-evenly row g-0 ">
+                    <div class="row card g-0 ">
+                        <div class="col-lg-7 flex-column align-items-end px-3 pb-1 pt-3">
+
+                            <h2 class="">3 Combinaciones perfectas para tus tragos favoritos</h1>
+                                <p>Descubrí curiosidades y recetas de los mejores tragos con Gin, Ron y mucho más.</p>
+                                <div class="d-flex justify-content-evenly ">
+                                    <img class=" d-none d-md-block autor-image px-2"
+                                        alt="imagen de perfil de cosme Fulanito" src="/assets/images/index/autor1.jpg">
+                                    <div class="autor-content">
+                                        <p class="h5">Por: Cosme Fulanito</p>
+                                        <div class="">
+                                            Actualizado hace 2 minutos
+                                            | 8 min de lectura </div>
+                                    </div>
+                                </div>
+
+                        </div>
+                        <div class="col-lg-5 p-0">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="/assets/images/index/card1-dark.jpg"
+                                            alt="3 Combinaciones perfectas para tus tragos favoritos"
+                                            class="card-images ">
+                                    </div>
+                                    <div class="flip-card-back d-flex justify-content-center">
+                                        <a href="/pages/recetas.html" class="btn btn-light ">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row card g-0 ">
+                        <div class="col-lg-7 flex-column align-items-end px-3 pb-1 pt-3">
+
+                            <h2 class="">Speakeasy</h1>
+                                <p>Bares vip temáticos escondidos a plena vista. Descubri nuestro bar recomendado</p>
+                                <div class="d-flex justify-content-evenly ">
+                                    <img class=" d-none d-md-block autor-image px-2"
+                                        alt="imagen de perfil de cosme Fulanito" src="/assets/images/index/autor2.jpg">
+                                    <div class="autor-content">
+                                        <p class="h5">Por: Barney Stinson</p>
+                                        <div class="">
+                                            Actualizado hace 1 semanas
+                                            | 14 min de lectura </div>
+                                    </div>
+                                </div>
+
+                        </div>
+                        <div class="col-lg-5 p-0">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="/assets/images/index/card2-bar.jpg"
+                                            alt="3 Combinaciones perfectas para tus tragos favoritos"
+                                            class="card-images ">
+                                    </div>
+                                    <div class="flip-card-back d-flex justify-content-center">
+                                        <a href="/pages/bar.html" class="btn btn-light">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row card g-0 ">
+                        <div class="col-lg-7 flex-column align-items-end px-3 pb-1 pt-3 ">
+
+                            <h2 class="">Vas a un bar y no podes parar de tomar? </h1>
+                                <p>Aqui uno de los tucos psicológicos utilizados por los establecimientos</p>
+                                <div class="d-flex justify-content-evenly ">
+                                    <img class=" d-none d-md-block autor-image px-2"
+                                        alt="imagen de perfil de cosme Fulanito" src="/assets/images/index/autor3.png">
+                                    <div class="autor-content">
+                                        <p class="h5">Por: Rick Sanchez</p>
+                                        <div class="">
+                                            Actualizado hace 1 mes
+                                            | 4 min de lectura </div>
+                                    </div>
+                                </div>
+
+                        </div>
+                        <div class="col-lg-5 p-0">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="/assets/images/index/card3-dark.jpg"
+                                            alt="3 Combinaciones perfectas para tus tragos favoritos"
+                                            class="card-images ">
+                                    </div>
+                                    <div class="flip-card-back d-flex justify-content-center">
+                                        <a href="/pages/musica.html" class="btn btn-light">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row card g-0 ">
+                        <div class="col-lg-7 flex-column align-items-end px-3 pb-1 pt-3">
+
+                            <h2 class="">Nuevos estudios descubren el secreto para no tener resaca</h1>
+                                <p>Como disfrutar de los efectos del alcohol sin preocuparse por el mañana.</p>
+                                <div class="d-flex justify-content-evenly ">
+                                    <img class=" d-none d-md-block autor-image px-2"
+                                        alt="imagen de perfil de cosme Fulanito" src="/assets/images/index/autor4.jpg">
+                                    <div class="autor-content">
+                                        <p class="h5">Por: Anonimus</p>
+                                        <div class="">
+                                            Actualizado hace 1 año
+                                            | 4 horas de lectura </div>
+                                    </div>
+                                </div>
+
+                        </div>
+                        <div class="col-lg-5 p-0">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="/assets/images/index/card4.jpg"
+                                            alt="3 Combinaciones perfectas para tus tragos favoritos"
+                                            class="card-images ">
+                                    </div>
+                                    <div class="flip-card-back d-flex justify-content-center">
+                                        <a href="/pages/error404/error404.html" class="btn btn-light"
+                                            target="blank">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </section>
+                <!--
+                =================================
+                ==			  paginación	   ==
+                ================================= -->
+                <nav aria-label="...">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item ">
+                            <a class="page-link text-muted" href="/pages/error404/error404.html">Previous</a>
+                        </li>
+                        <li class="page-item active "><a class="page-link" href="#">1</a></li>
+                        <li class="page-item " aria-current="page">
+                            <a class="page-link text-muted" href="/pages/error404/error404.html">2</a>
+                        </li>
+                        <li class="page-item "><a class="page-link text-muted"
+                                href="/pages/error404/error404.html">3</a></li>
+                        <li class="page-item ">
+                            <a class="page-link text-muted" href="#">Next</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Boton de mensje de whatsapp -->
+                <a class="logoWpp" href="https://wa.me/5493815541428?text=No me%20interesa%20el%20auto%20que%20vendes"
+                    target="blanck">
+                    <img src="/assets/images/index/logoWhtatsapp.png" alt="logo de whatsapp">
+                </a>
+            </main>
+
+        </div>
+
+
+    </div>
+    <!-- INICIO FOOTER -->
+    <footer class="w-100">
+        <div class="row g-0">
+            <div class=" d-flex col-12 col-md-6 col-lg-4 justify-content-center">
+                <div>
+                    <div class="p-1">
+                        <p>¡Seguinos en nuestras redes!</p>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <a href="https://www.instagram.com/?hl=es" target="_blank"> <img
+                                src="/assets/images/Footer/instagram.png" width="45" height="auto" alt="instagram"></a>
+                        <a href="https://www.facebook.com/" target="_blank"> <img
+                                src="/assets/images/Footer/facebook.png" width="45" height="auto" alt="facebook"></a>
+                        <a href="https://twitter.com/?lang=es" target="_blank"><img
+                                src="/assets/images/Footer/twitter.png" width="45" height="auto" alt="twitter"></a>
+                    </div>
+                </div>
+            </div>
+            <div class=" d-flex d-none d-md-flex col-md-6 col-lg-4 justify-content-center">
+                <img src="/assets/images/Footer/logofooter.png" width="100" height="auto" alt="">
+            </div>
+            <div class=" d-none d-lg-flex col-lg-4 justify-content-center align-item-center mt-2">
+                <div>
+                    <img src="/assets/images/Contact/house.png" width="20px" alt=""> G.Paz 555, S.M de Tucuman,
+                    Argentina <br>
+                    <img src="/assets/images/Contact/phone.png" width="20px" alt=""> +54 9 3814865982 <br>
+                    <img src="/assets/images/Contact/mail.png" width="20px" alt=""> info@ontherocks.com <br>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FIN FOOTER -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+    </script>
+    
+</body>
+
+</html>

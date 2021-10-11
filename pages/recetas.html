@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas</title>
+    <link rel="stylesheet" href="/styles/bootstrap.css">
+    <link rel="stylesheet" href="/styles/jonathannavfooter.css">
+    <link rel="stylesheet" href="/styles/franco.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+      <!--INICIO HEADER-->
+  <header class="p-0 sticky-top bg-dark ">
+    <nav class="navbar navbar-expand-lg navbar-dark p-0 espacio-container ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html">
+          <img src="/assets/images/Navbar/logonav.png" alt="" width="100px" height="auto"
+            class="d-inline-block align-text-top m-0 p-0">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+          <!--LINKS HEADER-->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav w-100 mb-2 mb-lg-0 mb-0 h1 d-flex">
+            <li class="nav-item">
+              <a type="button" class="btn btn-dark mx-2" aria-current="page" href="#" data-bs-toggle="modal"
+                data-bs-target="#Modalsuscripcion">Suscripción</a>
+            </li>
+            <li class="nav-item">
+              <a type="button" class="btn btn-dark mx-2" aria-current="page" href="/pages/contact.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a type="button" class="btn btn-dark mx-2" aria-current="page" href="/pages/about.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a type="button" class="btn btn-dark mx-2" aria-current="page" href="/pages/gallery.html">Galería</a>
+            </li>
+            <li class="nav-item d-flex espacio">
+              <div class="espacio"></div>
+            </li>
+            <li class="nav-item">
+              <a type="button" class="btn btn-dark mx-2" aria-current="page" href="/pages/login.html"> <i
+                  class="fas fa-user"></i> Login </i></a>
+            </li>
+          </ul>
+        </div>
+        <!--FIN LINKS HEADER-->
+      </div>
+    </nav>
+  </header>
+  <!--INICIO MODAL-->
+  <div class="modal fade" id="Modalsuscripcion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header modal1 col">
+          <h4 class="modal-title" id="exampleModalLabel">¡Sigamos en contacto!</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body modal1">
+          <form>
+            <h5 class="modal-title" id="exampleModalLabel">Subscribite y recibi las mejores promociones para tus bares preferidos</h5><br>
+            <div class="mb-3">
+              <label for="name" class="form-label">Nombre y Apellido</label>
+              <div class="input-group">
+                <span class="input-group-text bg-dark text-white" id="basic-addon1"><i class="fas fa-user"></i></span>
+                <input type="text" class="form-control" id="name" name="name">
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label" name="email">Email</label>
+              <div class="input-group">
+                <span class="input-group-text bg-dark text-white" id="basic-addon1"><i
+                    class="fas fa-envelope"></i></span>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1" name="Subscripcion">
+              <label class="form-check-label" for="exampleCheck1">Recibir promociones</label>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer modal1 d-flex justify-content-between">
+          <img src="/assets/images/Navbar/Logo_transaparente_chico.png" alt="" width="80px" height="auto"
+            class="d-inline-block align-text-top m-0">
+            <a href="/pages/error404/error404.html" type="button" class="btn btn-dark"> Enviar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FIN MODAL -->
+  <!-- FIN HEADER -->
+    <main>
+        <!-- título de la pagina -->
+        <div class="main-title">
+            <h1>Cocktails</h1>
+        </div>
+        <!-- video -->
+        <div class="img-container mt-20">
+            <img src="/assets/images/recetas/image.jpg" width="100%" height="400px" alt="portada cocktail rojo">
+        </div>
+        <!-- contenido sobre las recetas -->
+        <div class="pt-0">
+            <!-- Tragos con Gin -->
+            <div class="container container1">
+                <h2>Cócteles con Gin</h2>
+                <div class="row gx-5">
+                    <div class="col-sm-12 col-md-4 col1">
+                        <h4>Negroni</h4>
+                        <p>Si has visto Mad Men posiblemente no te extrañará este coctel. A 30 ml de ginebra Hendrick’s
+                            añádele
+                            en el vaso medidor 15 ml de Campari, 15 ml de Aperol y 20 ml de vermú rojo. Sirve en un vaso
+                            bajo
+                            con hielo y piel de naranja. El negroni es un viaje directo a Sicilia sin pasar por el
+                            aeropuerto.
+                        </p>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col1">
+                        <h4>Martini</h4>
+                        <p>Pocos cócteles tienen tan poco trabajo como buen resultado. Mezcla con fuerza y hielo en una
+                            coctelera 50 ml de una ginebra fresca como por ejemplo London nº3 y 10 ml de vermú blanco
+                            seco.
+                            Sirve en vaso de martini con decoracion de aceituna y a gozar.</p>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col1">
+                        <h4>Gin Tonic</h4>
+                        <p>Un clásico entre los clásicos. La unión perfecta entre la ginebra y los cítricos. 60 ml de
+                            ginebra
+                            muy perfumada, como Gin Mare, añade 15 ml de jugo de lima y 10 ml de sirope, adorna la copa
+                            con
+                            un
+                            Twist de lima y tendrás la bebida perfecta.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tragos con ron -->
+            <div class="container container1">
+                <h2>Cócteles con Ron</h2>
+                <div class="row">
+                    <div class="col-sm-12 col-md-4 col1">
+                        <h4>Mojito</h4>
+                        <p>Sin duda el más famoso de todos los combinados que llevan ron. Es una mezcla muy sencilla con
+                            4
+                            cl de
+                            ron blanco, 3 cl de zumo de lima, 6 ramas de menta, 2 cucharadas de azúcar, soda y hielo en
+                            cubitos
+                            o picado.</p>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col1">
+                        <h4>Daikiri</h4>
+                        <p>El origen de este combinado está en el siglo XIX y se elabora con ron blanco, zumo de lima,
+                            jarabe de
+                            frutas y hielo. Se deben mezclar todos los ingredientes en la batidora hasta que la
+                            consistencia
+                            sea
+                            espesa, mejor conocido como frozen.</p>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col1">
+                        <h4>Cuba Libre</h4>
+                        <p>Un trago simple, pero a la vez con más de 100 años de historia. Ron, Coca cola y limón.
+                            Conocido
+                            también como cubata, cuba o simplemente ron-cola, este simple combinado puedes hacerlo en
+                            tan
+                            sólo 2
+                            minutos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- tragos con vodka  -->
+            <div class="container container1">
+                <h2>Cócteles con Vodka</h2>
+                <div class="row">
+                    <div class="col-sm-12 col-md-4 col1">
+                        <h4>Cosmopolitan</h4>
+                        <p>Hablamos de un cóctel que ha conocido el éxito en los primeros años de este milenio. Al
+                            beberlo
+                            desde la distancia sólo podemos preguntarnos: ¿por qué dejamos de beberlo? Para prepararlo
+                            vierte en la coctelera, en este orden: vodka, jugo de limón, Cointreau y jugo de arándanos.
+                            Decora la copa con una rodaja de limón. Beber a pequeños sorbos.</p>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col1">
+                        <h4>Caipiroska</h4>
+                        <p>Un cóctel que sabe a verano aunque lo bebas en la estación más fría. Para preparar una buena
+                            Caipiroska hay que meter en el vaso tres gajos de lima, cuatro cucharaditas de azúcar de
+                            caña y
+                            dos partes de vodka. Mezclar aplastando las limas y rematar con hielo triturado.</p>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col1">
+                        <h4>Destornillador</h4>
+                        <p>Este cóctel sólo tiene dos ingredientes. Prepararlo es sencillo, pero beberlo puede resultar
+                            más
+                            complicado. Se necesitan 50 ml de vodka y jugo de naranja para acompañar. Introduce el hielo
+                            y
+                            el vodka en el vaso. Rellénalo con zumo de naranja y mézclalo suavemente con una cuchara de
+                            cóctel.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- otros tragos -->
+            <div class="container container1">
+                <h2>Otros cócteles populares</h2>
+                <div class="row">
+                    <div class="col-sm-12 col-md-4 col1">
+                        <h4>Margarita</h4>
+                        <p>El margarita es uno de los cócteles insignia de México y de los más famosos del mundo. Se
+                            prepara
+                            con tequila(1/2), triple sec (1/4) y jugo de lima o limón(1/4), batido con hielo o frozen.
+                            Posee
+                            una caracteristica esencial en su presentacion, la cual es una corona de sal en el borde del
+                            vaso o copa.</p>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col1">
+                        <h4>Caipirinha</h4>
+                        <p>Podríamos considerar a la Caipirinha el cóctel nacional de Brasil. Se compone de cachaça o
+                            ron
+                            brasileño, azúcar moreno y jugo de lima. Se coloca la lima al fondo del vaso y se oprime
+                            para
+                            liberar el jugo, se agrega el azúcar y luego el ron, sumamos buena cantidad de hielo y a
+                            disfrutar.</p>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col1">
+                        <h4>Californication</h4>
+                        <p>Este cóctel le debe su nombre a uno de los temas más conocidos de los Red Hot Chili Peppers.
+                            Se
+                            trata de una mezcla de ron, vodka, tequila y la ginebra a la que se añade licor de naranja,
+                            jugo
+                            de limón y jugo de naranja al gusto.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cocktail-video d-flex py-5">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/jWjnY7BxrAM"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <!-- CAJA DE ENVIO DE COMENTARIOS -->
+        <section class="container">
+            <div>
+                <h3>Dejá tu comentario</h3>
+            </div>
+            <div class="comentario">
+                <textarea placeholder="Escribe tu comentario..."></textarea>
+            </div>
+            <div class="boton-enviar my-1">
+              <a href="/pages/error404/error404.html" type="button" class="btn btn-dark"> Enviar</a>
+            </div>
+            <!-- CAJA DE COMENTARIOS  -->
+            
+            <div>
+              <h3>Comentarios</h3>
+          </div>
+          <div class="commentary-box mt-4 d-flex column-flex">
+              <div class="d-flex mt-2 mb-0 py-2">
+                  <div><img src="/assets/images/Comentarios/Martin.jpg" alt="Martin" width="60px">
+                  </div>
+                  <div class="d-flex column-flex mx-3">
+                      <h6>Martin Rodriguez <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></h6>
+                      <p>Tremendas todas las recetas, siempre tengo el link a mano!</p>
+                  </div>
+              </div>
+              <hr class="m-0">
+              <div class="d-flex mt-2 mb-0 py-2">
+                  <div><img src="/assets/images/Comentarios/RollingLogo.png" alt="Rolling Code" class="logo-rolling"
+                          width="60px">
+                  </div>
+                  <div class="d-flex column-flex mx-3">
+                      <h6>Rolling Code <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></h6>
+                      <p>Buena idea la de ambientar un bar como un subte, lo vamos a hacer con la oficina</p>
+                  </div>
+              </div>
+              <hr class="m-0">
+              <div class="d-flex mt-2 mb-0 py-2">
+                  <div><img src="/assets/images/Comentarios/Rodrigo.jpg" alt="Rodrigo" width="60px">
+                  </div>
+                  <div class="d-flex column-flex mx-3">
+                      <h6>Rodrigo Martínez <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></h6>
+                      <p>Con razón me gusta tanto escuchar musica!!!</p>
+                  </div>
+              </div>
+              <hr class="m-0">
+              <div class="d-flex mt-2 mb-0 py-2">
+                  <div><img src="/assets/images/Comentarios/Fernandosegnorile.jpg" alt="Fernando" width="60px">
+                  </div>
+                  <div class="d-flex column-flex mx-3">
+                      <h6>Fernando Segnorile <i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></h6>
+                      <p>Malísimo el contenido de la página, no me sirvió para nada</p>
+                  </div>
+              </div>
+              <hr class="m-0">
+              <div class="d-flex mt-2 mb-0 py-2">
+                  <div><img src="/assets/images/Comentarios/Seguridad_patricia_bullrich.jpg" alt="Bullrich"
+                          width="60px">
+                  </div>
+                  <div class="d-flex column-flex mx-3">
+                      <h6>Pato Bullrich <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i></h6>
+                      <p>No hay recetas con champagne? Podrian subir algunas!!</p>
+                  </div>
+              </div>
+          </div>
+        </section>
+    </main>
+           <!-- INICIO FOOTER -->
+  <footer class="w-100">
+    <div class="row g-0">
+      <div class=" d-flex col-12 col-md-6 col-lg-4 justify-content-center">
+        <div>
+          <div class="p-1">
+            <p>¡Seguinos en nuestras redes!</p>
+          </div>
+          <div class="d-flex justify-content-center">
+            <a href="https://www.instagram.com/?hl=es" target="_blank"> <img src="/assets/images/Footer/instagram.png" width="45" height="auto" alt="instagram"></a>
+            <a href="https://www.facebook.com/" target="_blank"> <img src="/assets/images/Footer/facebook.png" width="45" height="auto" alt="facebook"></a>
+            <a href="https://twitter.com/?lang=es" target="_blank"><img src="/assets/images/Footer/twitter.png" width="45" height="auto" alt="twitter"></a>
+          </div>
+        </div>
+      </div>
+      <div class=" d-flex d-none d-md-flex col-md-6 col-lg-4 justify-content-center">
+        <img src="/assets/images/Footer/logofooter.png" width="100" height="auto" alt="">
+      </div>
+      <div class=" d-none d-lg-flex col-lg-4 justify-content-center align-item-center mt-2">
+        <div>
+          <img src="/assets/images/Contact/house.png" width="20px" alt=""> G.Paz 555, S.M de Tucuman, Argentina <br>
+          <img src="/assets/images/Contact/phone.png" width="20px" alt=""> +54 9 3814865982 <br>
+          <img src="/assets/images/Contact/mail.png" width="20px" alt=""> info@ontherocks.com <br>
+        </div>
+      </div>
+    </div>
+  </footer>
+         <!-- FIN FOOTER -->
+    <script src="/js/bootstrap.js"></script>
+</body>
+
+</html>
